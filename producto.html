@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Información detallada de un producto del catálogo.">
+    <meta name="keywords" content="producto, detalle, catálogo, JavaScript">
+    <title>Detalle del producto</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/apiProductos.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="encabezado encabezado-detalle">
+        <div class="ancho-contenido">
+            <p class="marca-sitio">SHOP API</p>
+            <h1>Detalle del producto</h1>
+        </div>
+    </header>
+
+    <main class="ancho-contenido contenido-detalle">
+        <a class="enlace-regreso" href="index.html">← Volver al catálogo</a>
+        <p id="mensajeDetalle" class="mensaje" role="status">Cargando información del producto...</p>
+        <section id="detalleProducto" class="tarjeta-detalle" aria-label="Información del producto"></section>
+    </main>
+</body>
+</html>

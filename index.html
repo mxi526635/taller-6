@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Catálogo de productos consultados desde una API.">
+    <meta name="keywords" content="catálogo, productos, JavaScript, API">
+    <title>Catálogo de Productos</title>
+    <link rel="stylesheet" href="css/estilos.css">
+    <script src="js/apiProductos.js" defer></script>
+    <script src="js/script.js" defer></script>
+</head>
+<body>
+    <header class="encabezado">
+        <div class="ancho-contenido">
+            <p class="marca-sitio">SHOP API</p>
+            <h1>Catálogo de productos</h1>
+            <p class="subtitulo">Selecciona un producto para consultar su información.</p>
+        </div>
+    </header>
+
+    <main class="ancho-contenido contenido-principal">
+        <div class="barra-catalogo">
+            <h2>Productos disponibles</h2>
+            <label class="solo-lectores" for="busquedaProducto">Buscar producto</label>
+            <input id="busquedaProducto" class="campo-busqueda" type="search" placeholder="Buscar producto..." autocomplete="off">
+        </div>
+        <p id="mensajeCatalogo" class="mensaje" role="status">Cargando productos...</p>
+        <section id="catalogoProductos" class="rejilla-productos" aria-label="Lista de productos"></section>
+    </main>
+</body>
+</html>
